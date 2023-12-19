@@ -7,7 +7,7 @@ $ip = $_GET['ip'];
 $hostname = $_GET['hostname'];
 $email = $_GET['email'];
 $key = $_GET['key'];
-$mail_to = 'Your Name <you@domain.com  >';
+$mail_to = 'Your Name <you@domain.com>';
 $mail_from = 'Cloudflare DynDNS <noreply@domain.com>';
 
 # GET `zone_id`
