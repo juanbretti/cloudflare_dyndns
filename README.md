@@ -1,9 +1,12 @@
 # Cloudflare Simple DynDNS
+
 A very simple way to update DNS records using Cloudflare.
 
 After reading the very comprehensive scripts from:
+
 - https://github.com/peppelg/Cloudflare-DDNS.php
 - https://github.com/nickian/Cloudflare-Dynamic-DNS
+
 And more about the Cloudflare API:
 - https://developers.cloudflare.com/api/
 
@@ -37,6 +40,7 @@ Note: The script uses the `mail` PHP function to send emails, so make sure that 
 ```
 https://www.domain.com/dyndns/cloudflare_dyndns.php?hostname=__HOSTNAME__&ip=__MYIP__&email=__USERNAME__&key=__PASSWORD__
 ```
+
 Where:
 - `__HOSTNAME__`: Your hostname, e.g.,  `home.domain.com`
 - `__MYIP__`: Your local IP, e.g., `20.1.2.3`
@@ -44,6 +48,7 @@ Where:
 - `__PASSWORD__`: Your _API Key_, e.g., `100bf38cc8393103870917dd535e0628`
 
 To get your _API Key_, go to:
+
 https://dash.cloudflare.com/profile/api-tokens >> API Keys >> Global API Key
 
 Tries to work the same way as (_the former_) **Google Domains**: https://support.google.com/domains/answer/6147083?hl=en#
