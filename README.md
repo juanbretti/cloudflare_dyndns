@@ -32,11 +32,13 @@ Note: The script uses the `mail` PHP function to send emails, so make sure that 
 
 # How it works
 
-1. Edit the first parameters at `cloudflare_dyndns.php`
+1. Edit the mail parameters on the first lines at `cloudflare_dyndns.php`:
+   - `$mail_to`: Your personal email, e.g., `Your Name <you@domain.com>`
+   - `$mail_from`: A random reply address. This address has no use, because the mail are being send by `mail` from PHP. For example, you can use `Cloudflare DynDNS <noreply@domain.com>`.
 
-2. Host the file `cloudflare_dyndns.php` in any of your webservers.
+3. Host the file `cloudflare_dyndns.php` in any of your webservers.
 
-3. Open the following URL to update your DNS records:
+4. Open the following URL to update your DNS records:
 ```
 https://www.domain.com/dyndns/cloudflare_dyndns.php?hostname=__HOSTNAME__&ip=__MYIP__&email=__USERNAME__&key=__PASSWORD__
 ```
