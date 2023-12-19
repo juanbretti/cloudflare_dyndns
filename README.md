@@ -1,6 +1,6 @@
 # Cloudflare Simple DynDNS
 
-A very simple way to update DNS records using Cloudflare.
+A very simple way to update DNS records using Cloudflare and PHP.
 
 After reading the very comprehensive scripts from:
 
